@@ -49,7 +49,7 @@ else
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login Page</title>
+    <title>Pagina de acceso</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -58,11 +58,11 @@ else
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="alert bg-warning" role="alert">
-                Login Form
+                formulario de acceso
                 </div>
                 <form method="post">  
                 <input type="text" class="form-control mt-1" name="email" placeholder="Email">
-                <input type="text" class="form-control mt-1" name="password" placeholder="Password">
+                <input type="text" class="form-control mt-1" name="password" placeholder="clave">
                 <?php
                 if(!empty($errormsg))
                 {
@@ -73,7 +73,6 @@ else
                     <?php
                 }
                 ?>
-                <a href="register.php">Don't have an account yet? </a><br>
                 <button type="submit" class="btn btn-warning mt-1">Login</button>   
                 </form>  
             </div>
