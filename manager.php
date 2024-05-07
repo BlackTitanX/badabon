@@ -4,7 +4,7 @@ ob_start();
 session_start();
 try
 {
-    $db = new PDO("mysql:host=localhost;dbname=blog;charset=utf8;", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=blog;charset=utf8;", "root", "Is19990204!");
 }
 catch(PDOException $dberror)
 {
