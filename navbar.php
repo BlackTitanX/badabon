@@ -52,7 +52,7 @@ require_once "manager.php";
       else
       {
         ?>
-        <a class="nav-link" href="/login.php">Login</a>
+        <a class="nav-link" href="../login.php">Login</a>
         <?php
       }
       ?>
