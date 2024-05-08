@@ -1,6 +1,19 @@
 <?php
 // cannot access the page if there is no session
 require_once "../manager.php";
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Cloudinary\Cloudinary;
+
+$cloudinary = new Cloudinary(
+    [
+        'cloud' => [
+            'cloud_name' => getenv("CHANNEL_NAME"),
+            'api_key'    => getenv("API_KEY"),
+            'api_secret' => getenv("API_SECRET]"),
+        ],
+    ]
+);
 
 if(!isset($_SESSION["email"]))
 {
@@ -12,6 +25,21 @@ if($_POST)
     $title = $_POST["title"];
     $text = $_POST["text"];
     $titlenumber = strlen($title);
+
+    if(isset($_FILES)){
+    $blogImage = $_FILES["blog_image"]["name"];
+    
+    $cloudinary->uploadApi()->upload(
+        $blogImage, 
+        ["public_id" => $blogImage + $title ]
+    );
+
+    echo $cloudinary;
+
+    }
+
+
+
     if($titlenumber > 80)
     {
         $errormsg = "Title is too long.";
@@ -54,7 +82,8 @@ if($_POST)
     <div class="container mt-3">
       <div class="row">
       <div class="col-md-12 mx-auto">
-        <form method="POST">
+        <form method="POST" method="post" enctype="multipart/form-data">
+            <input type="file" name="blog_image" id="blog_image">
             <input type="text" name="title"  class="form-control" placeholder="Title">
             <textarea name="text" class="form-control mt-1" cols="30" rows="10" placeholder="Text"></textarea>
             <?php
