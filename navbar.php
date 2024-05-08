@@ -6,18 +6,18 @@ require_once "manager.php";
 <div class="section" id="b-section-header" name="Header"><div class="widget Header" data-version="2" id="Header1">
 <div class="header image-placement-behind no-image">
   
-<div class="container">
-<h1><a href="">AMADO CLICK</a></h1>
-<p>AMADO CLICK</p>
+<div class="container" style="background-image: url('./assets/bannerr.jpg');">
+
 </div>
 </div>
-</div></div>
+</div>
+</div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
       
       <div class="container">
-    <a class="navbar-brand" href="/index.php">Amado Click</a>
+    <a class="navbar-brand" href="/index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

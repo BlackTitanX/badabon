@@ -54,11 +54,20 @@ if($_GET)
       flex-direction: column;
       -ms-flex-pack: center;
       justify-content: center;
-      min-height: 350px;
+      min-height: 270px;
       padding-top: 4rem;
       padding-bottom: 4rem;
       color: #fff;
       background-color:  #6f42c1;
+      background-image: url("./assets/baner.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .custom-logo {
+    width: 50px; /* Adjust the width according to your requirement */
+    height: auto; /* To maintain aspect ratio */
   }
   
   *, ::after, ::before {
