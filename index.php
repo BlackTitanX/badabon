@@ -14,7 +14,7 @@ require_once "manager.php";
 
     <body>
 
-<?php include "../navbar.php"?>
+<?php include "./navbar.php"?>
 
 	
 
