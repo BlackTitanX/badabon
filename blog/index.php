@@ -9,10 +9,6 @@ require_once "../manager.php";
 
 <?php include "../navbar.php"?>
 
-	
-
-
-
     <!-- Page Content -->
     <div class="container">
 

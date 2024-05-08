@@ -6,7 +6,7 @@ require_once "manager.php";
 <div class="section" id="b-section-header" name="Header"><div class="widget Header" data-version="2" id="Header1">
 <div class="header image-placement-behind no-image">
   
-<div class="container" style="background-image: url('./assets/bannerr.jpg');">
+<div class="container" style="background-image: url('/assets/bannerr.jpg');">
 
 </div>
 </div>
@@ -17,13 +17,13 @@ require_once "manager.php";
 
       
       <div class="container">
-    <a class="navbar-brand" href="./index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
+    <a class="navbar-brand" href="index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
+        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
       </div>
     </div>
     <form class="form-inline my-2 my-lg-0">

@@ -44,6 +44,27 @@ require_once "../manager.php";
         <div class="container">
 
       <div class="row">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-1-12 mx-auto w-200">
+            <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title"><?php echo $info["blogtitle"];?></h5>
+                <p class="card-text  text-break"><?php echo $info["blogtext"];?></p>
+                <?php
+                if($authority == "Admin")
+                {
+                    ?>
+                    <a href="editblog.php?blogid=<?php echo $info["blogid"];?>">Edit</a>
+                    <a href="deleteblog.php?blogid=<?php echo $info["blogid"];?>">Delete</a>
+                    <?php
+                }
+                ?>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
 
         <!-- Blog Entries Column -->
         <div class="col-lg-8">
@@ -225,28 +246,7 @@ require_once "../manager.php";
 
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1-12 mx-auto">
-            <div class="card text-center">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo $info["blogtitle"];?></h5>
-                <p class="card-text  text-break"><?php echo $info["blogtext"];?></p>
-                <?php
-                if($authority == "Admin")
-                {
-                    ?>
-                    <a href="editblog.php?blogid=<?php echo $info["blogid"];?>">Edit</a>
-                    <a href="deleteblog.php?blogid=<?php echo $info["blogid"];?>">Delete</a>
-                    <?php
-                }
-                ?>
-            </div>
-            </div>
-            </div>
-        </div>
-    </div>
-
+ 
     <?php include "..foter.php"?>
   </body>
 </html>

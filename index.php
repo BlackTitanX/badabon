@@ -10,7 +10,7 @@ require_once "manager.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <?php include "navbar.php"?>
+
 
     <body>
 
@@ -179,7 +179,7 @@ require_once "manager.php";
 
     <!--footer-->
 
-    <?php include "../footer.php"?>
+    <?php include "./footer.php"?>
 
   </body>
 
