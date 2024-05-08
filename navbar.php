@@ -17,7 +17,7 @@ require_once "manager.php";
 
       
       <div class="container">
-    <a class="navbar-brand" href="/index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
+    <a class="navbar-brand" href="./index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,14 +45,14 @@ require_once "manager.php";
         }
         ?>
         
-        <a class="nav-link" href="../profile.php">Perfil</a>
-        <a class="nav-link" href="../badabon/logout.php">Salir</a>
+        <a class="nav-link" href="./profile.php">Perfil</a>
+        <a class="nav-link" href="./badabon/logout.php">Salir</a>
         <?php
       }
       else
       {
         ?>
-        <a class="nav-link" href="../login.php">Login</a>
+        <a class="nav-link" href="./login.php">Login</a>
         <?php
       }
       ?>
