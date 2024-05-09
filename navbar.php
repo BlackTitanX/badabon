@@ -23,7 +23,7 @@ require_once "manager.php";
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        <a class="nav-link active" aria-current="page" href="index.php">INICIO</a>
       </div>
     </div>
     <form class="form-inline my-2 my-lg-0">
@@ -46,7 +46,7 @@ require_once "manager.php";
         ?>
         
         <a class="nav-link" href="./profile.php">Perfil</a>
-        <a class="nav-link" href="./badabon/logout.php">Salir</a>
+        <a class="nav-link" href="./logout.php">Salir</a>
         <?php
       }
       else
