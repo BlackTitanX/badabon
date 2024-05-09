@@ -41,7 +41,7 @@ require_once "manager.php";
 
           <!-- Blog Post -->
           <div class="card mb-4">
-            <img class="card-img-top" src="https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg">
+            <img class="card-img-top" src="<?php echo htmlspecialchars($blog["blogimage"]); ?>">
             <div class="card-body">
               <h2 class="card-title"><a href="blog/blog.php?blogid=<?php echo $blog["blogid"];?>"><h5 class="card-title text-dark"><?php echo $blog["blogtitle"]?></h5></a></h2>
             

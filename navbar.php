@@ -6,7 +6,7 @@ require_once "manager.php";
 <div class="section" id="b-section-header" name="Header"><div class="widget Header" data-version="2" id="Header1">
 <div class="header image-placement-behind no-image">
   
-<div class="container" style="background-image: url('/assets/bannerr.jpg');">
+<div class="container" style="background-image: url('https://asset.cloudinary.com/dbllecqwm/b4f9d26d38ba5a1ceae540fd984c441a');">
 
 </div>
 </div>
@@ -17,7 +17,7 @@ require_once "manager.php";
 
       
       <div class="container">
-    <a class="navbar-brand" href="index.php">Amado Click <span><img src="./assets/logoX.png" class="custom-logo" alt=""></span></a>
+    <a class="navbar-brand" href="index.php">AMADO CLICK <span><img src="https://res.cloudinary.com/dbllecqwm/image/upload/v1715225013/logoX_dgvny9.png" class="custom-logo" alt=""></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

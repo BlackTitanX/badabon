@@ -1,19 +1,18 @@
 <?php
 // cannot access the page if there is no session
 require_once "../manager.php";
-require_once __DIR__ . '/vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
-use Cloudinary\Cloudinary;
+use Cloudinary\Configuration\Configuration;
+use Cloudinary\Api\Upload\UploadApi;
 
-$cloudinary = new Cloudinary(
-    [
-        'cloud' => [
-            'cloud_name' => getenv("CHANNEL_NAME"),
-            'api_key'    => getenv("API_KEY"),
-            'api_secret' => getenv("API_SECRET]"),
-        ],
-    ]
-);
+Configuration::instance('cloudinary://972788198359745:7K0OAPyOpIf3yCQT-4RVQrJy4_w@dbllecqwm?secure=true');
+
+
+
+
+
+
 
 if(!isset($_SESSION["email"]))
 {
@@ -25,20 +24,31 @@ if($_POST)
     $title = $_POST["title"];
     $text = $_POST["text"];
     $titlenumber = strlen($title);
+    $blogphotourl = '';
 
     if(isset($_FILES)){
-    $blogImage = $_FILES["blog_image"]["name"];
+        try{
     
-    $cloudinary->uploadApi()->upload(
-        $blogImage, 
-        ["public_id" => $blogImage + $title ]
-    );
+    $blogImage =  $_FILES["blog_image"]["tmp_name"];
+    $upload = new UploadApi();
+    $publicId = uniqid('file_', true);
 
-    echo $cloudinary;
+    $result = $upload->upload($blogImage, [
+        'public_id' => $publicId,
+        'use_filename' => true,
+        'overwrite' => true]);
 
+
+      
+     
+     $blogphotourl = $result['secure_url'];
+
+    }catch(Exception $e) {
+
+        echo $e->getMessage();
+    
     }
-
-
+}
 
     if($titlenumber > 80)
     {
@@ -48,8 +58,8 @@ if($_POST)
     {
         if($title!="" && $text!="")
         {
-            $query = $db->prepare("INSERT INTO blog SET blogtitle=?, blogtext=?, user=?, time=? ");
-            $addblog = $query->execute(array($title, $text, $username, date("Y-m-d h:i:s")));
+            $query = $db->prepare("INSERT INTO blog SET blogtitle=?, blogtext=?, user=?, time=?, blogimage=?");
+            $addblog = $query->execute(array($title, $text, $username, date("Y-m-d h:i:s"),$blogphotourl));
             if($addblog)
             {
                 $errormsg = "Text Added.";

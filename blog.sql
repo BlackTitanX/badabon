@@ -32,15 +32,16 @@ CREATE TABLE `blog` (
   `blogtitle` varchar(80) NOT NULL,
   `blogtext` mediumtext NOT NULL,
   `user` varchar(255) NOT NULL,
-  `time` datetime(6) NOT NULL
+  `time` datetime(6) NOT NULL,
+  `blogimage` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Tablo döküm verisi `blog`
 --
 
-INSERT INTO `blog` (`blogid`, `blogtitle`, `blogtext`, `user`, `time`) VALUES
-(35, 'Tested', 'Tested', 'admin', '2022-08-21 05:37:26.000000');
+INSERT INTO `blog` (`blogid`, `blogtitle`, `blogtext`, `user`, `time`,`blogimage`) VALUES
+(35, 'Tested', 'Tested', 'admin', '2022-08-21 05:37:26.000000','https://res.cloudinary.com/dbllecqwm/image/upload/v1715231646/file_663c5b9d5515b5.33641225.jpg');
 
 -- --------------------------------------------------------
 

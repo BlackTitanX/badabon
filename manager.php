@@ -59,7 +59,7 @@ if($_GET)
       padding-bottom: 4rem;
       color: #fff;
       background-color:  #6f42c1;
-      background-image: url("./assets/baner.jpeg");
+      background-image: url("https://res.cloudinary.com/dbllecqwm/image/upload/v1715224756/photo1715224702_p86qqh.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
