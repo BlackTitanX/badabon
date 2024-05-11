@@ -5,7 +5,7 @@ require_once "manager.php";
 
 <div class="section" id="b-section-header" name="Header"><div class="widget Header" data-version="2" id="Header1">
 <div class="header image-placement-behind no-image">
-  
+  <h1 id="banner-letters">SOMOS NOTICIAS </h1>
 <div class="container" style="background-image: url('https://asset.cloudinary.com/dbllecqwm/b4f9d26d38ba5a1ceae540fd984c441a');">
 
 </div>

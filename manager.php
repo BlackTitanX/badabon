@@ -54,15 +54,18 @@ if($_GET)
       flex-direction: column;
       -ms-flex-pack: center;
       justify-content: center;
-      min-height: 270px;
+      min-height: 100px;
       padding-top: 4rem;
       padding-bottom: 4rem;
       color: #fff;
-      background-color:  #6f42c1;
-      background-image: url("https://res.cloudinary.com/dbllecqwm/image/upload/v1715224756/photo1715224702_p86qqh.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      background-color: #888;
+
+  }
+
+
+  #banner-letters{
+    font-weight: 900;
+    margin-left: 50px;
   }
 
   .custom-logo {
