@@ -58,14 +58,18 @@ if($_GET)
       padding-top: 4rem;
       padding-bottom: 4rem;
       color: #fff;
-      background-color: #888;
+      background-color: #fff;
 
   }
-
+   .top-image img{
+    height: 250px !important;
+    width: 250px !important;
+   }
 
   #banner-letters{
     font-weight: 900;
     margin-left: 50px;
+    color:#111;
   }
 
   .custom-logo {

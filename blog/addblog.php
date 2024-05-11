@@ -88,14 +88,22 @@ if($_POST)
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+    <!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
     <?php include "../navbar.php"?>
     <div class="container mt-3">
       <div class="row">
       <div class="col-md-12 mx-auto">
-        <form method="POST" method="post" enctype="multipart/form-data">
+
+             <form method="POST" method="post" enctype="multipart/form-data">
             <input type="file" name="blog_image" id="blog_image">
             <input type="text" name="title"  class="form-control" placeholder="Title">
-            <textarea name="text" class="form-control mt-1" cols="30" rows="10" placeholder="Text"></textarea>
+            <textarea id="summernote" name="text" class="form-control mt-1">Hello Summernote</textarea>
+            
+
             <?php
                 if(!empty($errormsg))
                 {
@@ -111,5 +119,13 @@ if($_POST)
       </div>
       </div>
     </div>
+
+    <script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+  </script>
+
+
 </body>
 </html>

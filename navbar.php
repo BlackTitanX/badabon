@@ -33,12 +33,9 @@ require_once "manager.php";
         if($authority == "Admin")
         {
           ?>
-           <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              Admin Panel
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="blog/addblog.php">Add Text</a>
+           <div class="nav-item">
+            <div class="">
+              <a class="" href="blog/addblog.php">Add Text</a>
             </div>
         </div>
           <?php

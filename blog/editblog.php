@@ -48,13 +48,17 @@ if($_POST)
     <title>Edit Blog</title>
   </head>
   <body>
+      <!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
     <?php include "../navbar.php"?>
     <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-md-8">
                 <form method="POST">
                     <input type="text" class="form-control" name="edittitle" value="<?php echo $info["blogtitle"]?>">
-                    <textarea class="form-control mt-1" name="edittext" cols="30" rows="60"><?php echo $info["blogtext"]?></textarea>
+                    <textarea id="summernote" name="edittext" class="form-control mt-5" cols="30" rows="60"><?php echo $info["blogtext"]?></textarea>
                
             </div>
             <div class="col-md-4">
@@ -73,5 +77,12 @@ if($_POST)
             </form>
         </div>
     </div>
+
+    <script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+  </script>
+
   </body>
 </html>
