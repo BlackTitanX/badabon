@@ -98,7 +98,7 @@ require_once "../manager.php";
 
           <!-- Post Content -->
            <p><?php echo $info["blogtext"];?></p>
-           <button type="button" onclick="share()" class="btn btn-primary">Compartir</button>
+           <button type="button" onClick="share()" class="btn btn-primary">Compartir</button>
           <hr>
          
           <!-- Comments Form -->
