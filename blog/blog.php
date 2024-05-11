@@ -30,7 +30,7 @@ require_once "../manager.php";
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>webublogoverflow Tutorial</title>
+    <title><?php echo $info["blogtitle"];?></title>
 
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -47,10 +47,8 @@ require_once "../manager.php";
       <div class="container">
         <div class="row">
             <div class="col-md-1-12 mx-auto w-200">
-            <div class="card text-center">
+            <div class="card text-center hidden">
             <div class="card-body">
-                <h5 class="card-title"><?php echo $info["blogtitle"];?></h5>
-                <p class="card-text  text-break"><?php echo $info["blogtext"];?></p>
                 <?php
                 if($authority == "Admin")
                 {
@@ -70,43 +68,36 @@ require_once "../manager.php";
         <div class="col-lg-8">
 
           <!-- Title -->
-          <h1 class="mt-4">Maasai Serengeti</h1>
+          <h1 class="mt-4"><?php echo $info["blogtext"];?></h1>
 
           <!-- Author -->
           <p class="lead">
             by
-            <a href="#">Webublogoverflow</a>
+            <a href="#">AMADO CLICK</a>
           </p>
 
           <hr>
 
           <!-- Date/Time -->
-          <p>Posted on January 1, 2018 at 12:00 PM</p>
+          <p>Publicado en <span><?php echo date($info["time"]);?></span></p>
 
           <hr>
-
+          <?php
+                if($authority == "Admin")
+                {
+                    ?>
+                    <a href="editblog.php?blogid=<?php echo $info["blogid"];?>">Edit</a>
+                    <a href="deleteblog.php?blogid=<?php echo $info["blogid"];?>">Delete</a>
+                    <?php
+                }
+                ?>
           <!-- Preview Image -->
-          <img class="card-img-top" src="https://2.bp.blogspot.com/-vvG5hMTFOro/W6RaoxdAikI/AAAAAAAAK1k/jezYdP7fvfYvt15Jv8a0agrGQE2lMU8YgCKgBGAs/s1600/MASAI-2.jpg" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo $info["blogimage"];?>" alt="Card image cap">
 
           <hr>
 
           <!-- Post Content -->
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
-          <blockquote class="blockquote">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-            </footer>
-          </blockquote>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+           <p><?php echo $info["blogtext"];?></p>
 
           <hr>
 

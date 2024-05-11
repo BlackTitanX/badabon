@@ -17,7 +17,7 @@ require_once "manager.php";
 
       
       <div class="container">
-    <a class="navbar-brand" href="index.php">AMADO CLICK <span><img src="https://res.cloudinary.com/dbllecqwm/image/upload/v1715225013/logoX_dgvny9.png" class="custom-logo" alt=""></span></a>
+    <a class="navbar-brand" href="index.php"><span><img src="https://res.cloudinary.com/dbllecqwm/image/upload/v1715225013/logoX_dgvny9.png" class="custom-logo" alt=""></span>AMADO CLICK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
