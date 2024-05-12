@@ -32,6 +32,18 @@ require_once "manager.php";
             <small class="text-danger">Informate aqui</small>
           </h1>
            
+          <?php 
+          if(isset($_GET['q'])){
+            $busqueda = $_GET['q'];
+          
+            $query = $db->prepare("SELECT * FROM blog WHERE blogtitle like %$busqueda% order by blogid desc");
+            $query->execute();
+            $blognumber = $query->rowCount();
+            $bloginfo = $query->fetchAll(PDO::FETCH_ASSOC);
+          }
+          
+          
+          ?>
 
           <?php
           foreach($bloginfo as $blog)

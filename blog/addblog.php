@@ -19,6 +19,7 @@ if(!isset($_SESSION["email"]))
     header("Location: ../index.php");
 }
 
+try{
 if($_POST)
 {
     $title = $_POST["title"];
@@ -58,8 +59,14 @@ if($_POST)
     {
         if($title!="" && $text!="")
         {
+
+            try{
             $query = $db->prepare("INSERT INTO blog SET blogtitle=?, blogtext=?, user=?, time=?, blogimage=?");
             $addblog = $query->execute(array($title, $text, $username, date("Y-m-d h:i:s"),$blogphotourl));
+            }
+            catch(Exception $e){
+                echo $e->getMessage();
+            }
             if($addblog)
             {
                 $errormsg = "Text Added.";
@@ -74,6 +81,9 @@ if($_POST)
             $errormsg = "Do not leave empty space!";
         }
     }
+}
+}catch(Exception $e){
+    echo $e->getMessage();
 }
 
 
