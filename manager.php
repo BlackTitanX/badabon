@@ -281,6 +281,12 @@ if($_GET)
       padding-bottom: 10px;
   }
 
+   .contador{
+    
+    float: right;
+    margin-right: 40px;
+    margin-top: -1;
+   }
   
   
   
