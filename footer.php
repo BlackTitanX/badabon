@@ -57,6 +57,7 @@ Este sitio web utiliza cookies para asegurarse de obtener la mejor experiencia e
 
 
     <script>
+
     // Function to set cookie
     function setCookie(name, value, days) {
         var expires = "";

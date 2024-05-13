@@ -138,9 +138,9 @@ require_once "../manager.php";
      let share = ()=>{
       if (navigator.share) {
       navigator.share({
-      title: 'web.dev',
-       text: 'Check out web.dev.',
-       url: 'http://amadoclick.info/',
+      title: 'Amado.Click',
+       text: 'Mira lo que acabo de leer!.',
+       url: `${window.location.href}`,
   })
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing', error));
