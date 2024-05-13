@@ -46,12 +46,6 @@ require_once "manager.php";
         <a class="nav-link" href="./logout.php">Salir</a>
         <?php
       }
-      else
-      {
-        ?>
-        <a class="nav-link" href="./login.php">Login</a>
-        <?php
-      }
       ?>
     </form>
   </div>
