@@ -61,7 +61,6 @@ require_once "manager.php";
 <div class="widget BlogSearch mt-2" data-version="2" id="BlogSearch1">
 <form action="" class="form-inline">
 <input aria-label="Search this blog" class="form-control mr-sm-2" name="q" placeholder="Search this blog" type="text">
-<button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
 </form>
 </div></div>
 </div>
