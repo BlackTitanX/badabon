@@ -63,12 +63,10 @@ require_once "../manager.php";
               <?php
                  if($numberofcharacters > 200)
                  {
-                      echo substr('<p class="card-text">'.$blog["blogtext"],0,350) .'</p>'."...";
-                    ?>
-                    <form method="get">
-                      <a class="btn btn-primary" href="blog/blog.php?blogid=<?php echo $blog["blogid"];?>">Leer Mas!</a>
-                    </form>
-                    <?php
+                  echo substr('<p class="card-text">'.$blog["blogtext"],0,350) .'</p>'."...";
+                  ?>
+                  <?php echo substr('<p class="card-text">'.$blog["blogtext"],0,50) ?>
+                  <?php
                  }
                  else
                  {
