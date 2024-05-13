@@ -47,19 +47,6 @@ require_once "../manager.php";
       <div class="container">
         <div class="row">
             <div class="col-md-1-12 mx-auto w-200">
-            <div class="card text-center hidden">
-            <div class="card-body">
-                <?php
-                if($authority == "Admin")
-                {
-                    ?>
-                    <a href="editblog.php?blogid=<?php echo $info["blogid"];?>">Edit</a>
-                    <a href="deleteblog.php?blogid=<?php echo $info["blogid"];?>">Delete</a>
-                    <?php
-                }
-                ?>
-            </div>
-            </div>
             </div>
         </div>
     </div>
