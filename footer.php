@@ -2,7 +2,7 @@
 require_once "manager.php";
 ?>
 
-<footer class="kilimanjaro_area">
+<footer class="kilimanjaro_area mt-5">
         <!-- Top Footer Area Start -->
         <div class="foo_top_header_one section_padding_100_70">
             <div class="container">
