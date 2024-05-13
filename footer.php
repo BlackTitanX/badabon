@@ -2,6 +2,11 @@
 require_once "manager.php";
 ?>
 
+<div id="cookieNotice">
+Este sitio web utiliza cookies para asegurarse de obtener la mejor experiencia en nuestro sitio web.<a href="/privacy-policy">Learn more</a>
+    <button onclick="acceptCookies()">Accept</button>
+</div>
+
 <footer class="kilimanjaro_area mt-5">
         <!-- Top Footer Area Start -->
         <div class="foo_top_header_one section_padding_100_70">
@@ -50,6 +55,54 @@ require_once "manager.php";
         </div>
     </footer>	
     <!-- Bootstrap core JavaScript -->
+
+ 
+
+
+    <script>
+    // Function to set cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Function to get cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Function to check if user has accepted the cookie notice
+    function hasAcceptedCookies() {
+        return getCookie("cookieNoticeAccepted") === "true";
+    }
+
+    // Function to accept cookies
+    function acceptCookies() {
+        setCookie("cookieNoticeAccepted", "true", 365);
+        document.getElementById("cookieNotice").style.display = "none";
+    }
+
+    // Show the cookie notice if the user has not accepted it yet
+    window.addEventListener("load", function() {
+        if (!hasAcceptedCookies()) {
+            document.getElementById("cookieNotice").style.display = "block";
+        }
+    });
+</script>
+
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7372068813923393"
      crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

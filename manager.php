@@ -295,6 +295,34 @@ if($_GET)
     max-width: 650px;
    }
   
+   #cookieNotice {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        display: none;
+        z-index: 9999;
+    }
+
+    #cookieNotice a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    #cookieNotice button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
   
   
   </style>
