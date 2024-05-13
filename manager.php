@@ -289,6 +289,11 @@ if($_GET)
     margin-right: 40px;
     margin-top: -1;
    }
+
+   .top-image, #card{
+    max-height: 650px;
+    max-width: 650px;
+   }
   
   
   
