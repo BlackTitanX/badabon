@@ -153,7 +153,7 @@ require_once "../manager.php";
       navigator.share({
       title: 'web.dev',
        text: 'Check out web.dev.',
-       url: 'https://web.dev/',
+       url: 'http://amadoclick.info/',
   })
     .then(() => console.log('Successful share'))
     .catch((error) => console.log('Error sharing', error));
