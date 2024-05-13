@@ -65,7 +65,7 @@ require_once "../manager.php";
                  if($numberofcharacters > 200)
                  {
                   ?>
-                  <a href="blog.php?blogid=<?php echo $blog["blogid"];?>" class="btn btn-primary">Leer Mas →</a>
+                 
                   <?php
                  }
                  else

@@ -19,7 +19,7 @@ require_once "manager.php";
  
 <!-- Contador de visitas -->
 <div class="contador"><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=16766"></a><br><a href='https://websmultimedia.com/contador-de-visitas-gratis'>Contador de visitas</a><br><a href='http://boxindian.com/'>Crossfit bormujos</a></div>
+<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=16766"></a></div>
 <!-- Fin Contador de visitas -->
 	
 
@@ -78,7 +78,7 @@ require_once "manager.php";
                  }
                 ?>
 
-             <a href="blog/blog.php?blogid=<?php echo $blog["blogid"];?>" class="btn btn-primary">Leer Mas →</a>
+             
 
 
 
