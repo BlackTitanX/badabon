@@ -43,7 +43,7 @@ require_once "manager.php";
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p>© All Rights Reserved by <a href="#">AMADOCLICK -(with all love)<i class="fa fa-love"></i></a></p>
+                        <p>© All Rights Reserved by <a href="#">AMADOCLICK<i class="fa fa-love"></i></a></p>
                     </div>
                 </div>
             </div>
