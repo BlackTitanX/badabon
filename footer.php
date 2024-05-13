@@ -3,7 +3,7 @@ require_once "manager.php";
 ?>
 
 <div id="cookieNotice">
-Este sitio web utiliza cookies para asegurarse de obtener la mejor experiencia en nuestro sitio web.<a href="/privacy-policy">Learn more</a>
+Este sitio web utiliza cookies para asegurarse de obtener la mejor experiencia en nuestro sitio web.<a href="privacy-policy.php">Learn more</a>
     <button onclick="acceptCookies()">Accept</button>
 </div>
 
