@@ -9,6 +9,7 @@ require_once "manager.php";
     <title>INICIO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="3M-lW6gLjmCYb0kjxQADuXI8GqoEDRidGG-01jUY2C4" />
+    
 </head>
 <body>
 

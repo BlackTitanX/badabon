@@ -8,52 +8,49 @@ Este sitio web utiliza cookies para asegurarse de obtener la mejor experiencia e
 </div>
 
 <footer class="kilimanjaro_area mt-5">
-        <!-- Top Footer Area Start -->
-        <div class="foo_top_header_one section_padding_100_70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-md-6 col-lg-10">
-                        <div class="kilimanjaro_part">
-                            <h5>About Us</h5>
-                            <p class="text-light">Mision</p>
-                             <p>El Equipo de Comunicación Amado Click, orienta, educa, informa y entretiene dentro de un marco ético, independiente y profesional, al servicio de los interesados y leyentes.</p>
-                            <p class="text-light">Vision</p>                            
-                            <p>Ser una de la paginas de comunicación más informativas, asegurando productos y servicios de calidad con rentabilidad insuperable.</p>
-                        </div>
-
-                        
+    <!-- Top Footer Area Start -->
+    <div class="foo_top_header_one section_padding_100_70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-10">
+                    <div class="kilimanjaro_part">
+                        <h5>About Us</h5>
+                        <p class="text-light">Mision</p>
+                        <p>El Equipo de Comunicación Amado Click, orienta, educa, informa y entretiene dentro de un marco ético, independiente y profesional, al servicio de los interesados y leyentes.</p>
+                        <p class="text-light">Vision</p>
+                        <p>Ser una de la paginas de comunicación más informativas, asegurando productos y servicios de calidad con rentabilidad insuperable.</p>
                     </div>
-                  
-                    
-                    <div class="col-2 col-md-6 col-lg-2">
-                        <div class="kilimanjaro_part">
-                            <h5>Contacto</h5>
-                            <div class="kilimanjaro_single_contact_info">
-                                <h5>Email:</h5>
-                                <p>clickamado@gmail.com</p>
-                            </div>
-                            <div class="kilimanjaro_part m-top-15">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="kilimanjaro_part">
+                        <h5>Contacto</h5>
+                        <div class="kilimanjaro_single_contact_info">
+                            <h5>Email:</h5>
+                            <p>clickamado@gmail.com</p>
+                        </div>
+                        <div class="kilimanjaro_part mt-3">
                             <h5>Social Links</h5>
                             <ul class="kilimanjaro_social_links">
                                 <li><a href="https://www.facebook.com/share/2rTvv2HyaTANv1CX/?mibextid=LQQJ4d" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
                             </ul>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer Bottom Area Start -->
-        <div class=" kilimanjaro_bottom_header_one section_padding_50 text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <p>© All Rights Reserved by <a href="#">AMADOCLICK<i class="fa fa-love"></i></a></p>
-                    </div>
+    </div>
+    <!-- Footer Bottom Area Start -->
+    <div class="kilimanjaro_bottom_header_one section_padding_50 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>© All Rights Reserved by <a href="#">AMADOCLICK<i class="fa fa-love"></i></a></p>
                 </div>
             </div>
         </div>
-    </footer>	
+    </div>
+</footer>
+
     <!-- Bootstrap core JavaScript -->
 
  
