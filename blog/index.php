@@ -65,7 +65,6 @@ require_once "../manager.php";
                  {
                   echo substr('<p class="card-text">'.$blog["blogtext"],0,350) .'</p>';
                   ?>
-                  <?php echo substr('<p class="card-text">'.$blog["blogtext"],0,50) ?>
                   <a href="blog.php?blogid=<?php echo $blog["blogid"];?>" class="btn btn-primary">Leer Mas →</a>
                   <?php
                  }
