@@ -2,7 +2,7 @@
 require_once "../manager.php";
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">

@@ -1,7 +1,7 @@
 <?php
 require_once "manager.php";
 ?>
-
+<!DOCTYPE html>
 
 <div class="section" id="b-section-header" name="Header"><div class="widget Header" data-version="2" id="Header1">
 <div class="header image-placement-behind no-image">
