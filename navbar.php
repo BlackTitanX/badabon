@@ -6,6 +6,8 @@ require_once "manager.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOMOS NOTICIAS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
 </head>
 <div class="section" id="b-section-header" name="Header">
     <div class="widget Header" data-version="2" id="Header1">
