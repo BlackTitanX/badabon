@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad - amadoclick.info</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
+    <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715656973/logo/evj0z1lurs4uvy7l1jja.png" type="image/png">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715656973/logo/evj0z1lurs4uvy7l1jja.png">
   <style>
     body {
       font-family: Arial, sans-serif;
