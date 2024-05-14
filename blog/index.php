@@ -24,8 +24,7 @@ require_once "../manager.php";
 
 	
 <!-- Contador de visitas -->
-<div class="contador"><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-<img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=16766"></a></div>
+<div id="sfclc1w6xfhuszm7rtdexkcure2dm8313qg"></div><script type="text/javascript" src="https://counter4.optistats.ovh/private/counter.js?c=lc1w6xfhuszm7rtdexkcure2dm8313qg&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=lc1w6xfhuszm7rtdexkcure2dm8313qg" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
 <!-- Fin Contador de visitas -->
 
 
