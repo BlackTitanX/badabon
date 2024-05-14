@@ -1,5 +1,5 @@
 <?php
-require_once "manager.php";
+require_once "./manager.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ require_once "manager.php";
     <title>INICIO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="3M-lW6gLjmCYb0kjxQADuXI8GqoEDRidGG-01jUY2C4" />
-  
+
    <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
     <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715656973/logo/evj0z1lurs4uvy7l1jja.png" type="image/png">
     <link rel="shortcut icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
@@ -21,13 +21,12 @@ require_once "manager.php";
     <body>
 
 <?php include "./navbar.php"?>
- 
+
+	
 <!-- Contador de visitas -->
 <div class="contador"><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
 <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=16766"></a></div>
 <!-- Fin Contador de visitas -->
-	
-
 
 
     <!-- Page Content -->
@@ -46,7 +45,7 @@ require_once "manager.php";
           if(isset($_GET['q'])){
             $busqueda = $_GET['q'];
           
-            $query = $db->prepare("SELECT * FROM blog WHERE blogtitle like %$busqueda% order by blogid desc");
+            $query = $db->prepare("SELECT * FROM blog WHERE blogtitle like '%$busqueda%' order by blogid desc");
             $query->execute();
             $blognumber = $query->rowCount();
             $bloginfo = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -62,18 +61,17 @@ require_once "manager.php";
             ?>
 
           <!-- Blog Post -->
-          <div class="card mb-4 mx-auto" id="card">
-            <img class="card-img-top top-image"   src="<?php echo htmlspecialchars($blog["blogimage"]); ?>" alt="blog Image">
+          <div class="card mb-5 mx-auto" id="card">
+            <img class="card-img-top top-image" src="<?php echo htmlspecialchars($blog["blogimage"]); ?>" alt="blog Image">
             <div class="card-body">
               <h2 class="card-title"><a href="blog/blog.php?blogid=<?php echo $blog["blogid"];?>"><h5 class="card-title text-dark"><?php echo $blog["blogtitle"]?></h5></a></h2>
             
               <?php
                  if($numberofcharacters > 200)
                  {
-                      echo substr('<p class="card-text">'.$blog["blogtext"],0,350) .'</p>'."...";
-                    ?>
-                    <?php echo substr('<p class="card-text">'.$blog["blogtext"],0,50) ?>
-                    <?php
+                  ?>
+                 
+                  <?php
                  }
                  else
                  {
