@@ -6,7 +6,7 @@ require_once '../vendor/autoload.php';
 use Cloudinary\Configuration\Configuration;
 use Cloudinary\Api\Upload\UploadApi;
 
-Configuration::instance('cloudinary://972788198359745:7K0OAPyOpIf3yCQT-4RVQrJy4_w@dbllecqwm?secure=true');
+Configuration::instance('cloudinary://395275118691212:EOIkHQAjTrykQB3Ndzl-7UlSNEs@dq3iibpqc?secure=true');
 
 
 
