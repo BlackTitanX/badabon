@@ -99,9 +99,7 @@ if($_POST)
 </head>
 <body>
 
-    <!-- include summernote css/js -->
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
 
     <?php include "../navbar.php"?>
     <div class="container mt-3">
@@ -135,6 +133,7 @@ if($_POST)
         $('#summernote').summernote();
     });
   </script>
+
 
 
 </body>
