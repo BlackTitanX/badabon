@@ -57,7 +57,7 @@ require_once "../manager.php";
 
           <!-- Blog Post -->
           <div class="card mb-5 mx-auto" id="card">
-            <img class="card-img-top top-image" src="<?php echo htmlspecialchars($blog["blogimage"]); ?>">
+            <img class="card-img-top top-image" src="<?php echo htmlspecialchars($blog["blogimage"]); ?>" alt="blog Image">
             <div class="card-body">
               <h2 class="card-title"><a href="blog.php?blogid=<?php echo $blog["blogid"];?>"><h5 class="card-title text-dark"><?php echo $blog["blogtitle"]?></h5></a></h2>
             

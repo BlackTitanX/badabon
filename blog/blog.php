@@ -79,7 +79,7 @@ require_once "../manager.php";
                 }
                 ?>
           <!-- Preview Image -->
-          <img class="card-img-top" src="<?php echo $info["blogimage"];?>" alt="Card image cap">
+          <img class="card-img-top" src="<?php echo $info["blogimage"];?>" alt="Card image cap"/>
 
           <hr>
 

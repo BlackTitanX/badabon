@@ -4,6 +4,7 @@ require_once "manager.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina busca compartir informacion relevante, siempre manteniendo un enfoque etico y moral.">
     <title>SOMOS NOTICIAS</title>
    <!-- Favicon links -->
    <link rel="icon" href="https://res.cloudinary.com/dq3iibpqc/image/upload/v1715650582/logo/qw0vyfe6fugcxp6wuanj.ico" type="image/x-icon">
