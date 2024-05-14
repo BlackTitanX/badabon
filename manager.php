@@ -75,7 +75,7 @@ if($_GET)
   }
 
   .custom-logo {
-    width: 50px; /* Adjust the width according to your requirement */
+    width: 60; /* Adjust the width according to your requirement */
     height: auto; /* To maintain aspect ratio */
   }
   
