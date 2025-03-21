@@ -4,7 +4,7 @@ ob_start();
 session_start();
 try
 {
-    $db = new PDO("mysql:host=localhost;dbname=blog;charset=utf8;", "root", "Is19990204!");
+    $db = new PDO("mysql:host=localhost;dbname=blog;charset=utf8;", "sample_username", "your-actual-password");
 
     setcookie("hello", "user", time() +606024*2);
 }
